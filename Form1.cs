@@ -47,5 +47,6 @@ namespace DreamLens
             FormAbout form = new FormAbout();
             form.ShowDialog();
         }
+
     }
 }

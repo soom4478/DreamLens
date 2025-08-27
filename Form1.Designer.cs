@@ -22,36 +22,31 @@
 
         #region Windows Form 디자이너에서 생성한 코드
 
-        /// <summary>
-        /// 디자이너 지원에 필요한 메서드입니다. 
-        /// 이 메서드의 내용을 코드 편집기로 수정하지 마세요.
-        /// </summary>
         private void InitializeComponent()
         {
             this.tbObject = new System.Windows.Forms.TextBox();
             this.tbAct = new System.Windows.Forms.TextBox();
             this.tbEmotion = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.파일ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.정보ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.내역불러오기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.끝내기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.끝내기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.정보ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dreamLens정보ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -84,7 +79,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
@@ -105,83 +99,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "꿈 내용 입력";
             // 
-            // label1
+            // button1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("굴림", 8F);
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(73, 105);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 11);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "꿈에 나온 사물을 입력해주세요";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(239, 82);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 12);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "이/가";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(455, 82);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 12);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "해서/서";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(651, 82);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 12);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "했다/다";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(359, 57);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(29, 12);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "변화";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(560, 57);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(29, 12);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "감정";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(137, 57);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(29, 12);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "사물";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("굴림", 8F);
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label8.Location = new System.Drawing.Point(289, 105);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(166, 11);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "사물에게 어떤 변화가 있었나요?";
+            this.button1.Font = new System.Drawing.Font("굴림", 10F);
+            this.button1.Location = new System.Drawing.Point(594, 131);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(142, 34);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "확인";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
@@ -194,25 +120,81 @@
             this.label9.TabIndex = 11;
             this.label9.Text = "어떤 감정을 느꼈나요?";
             // 
-            // button1
+            // label8
             // 
-            this.button1.Font = new System.Drawing.Font("굴림", 10F);
-            this.button1.Location = new System.Drawing.Point(594, 131);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(142, 34);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "확인";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("굴림", 8F);
+            this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label8.Location = new System.Drawing.Point(289, 105);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(166, 11);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "사물에게 어떤 변화가 있었나요?";
             // 
-            // label10
+            // label7
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("굴림", 12F);
-            this.label10.Location = new System.Drawing.Point(24, 19);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(230, 16);
-            this.label10.TabIndex = 13;
-            this.label10.Text = "꿈에서 본 내용을 입력해주세요";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(137, 57);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(29, 12);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "사물";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("굴림", 8F);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label1.Location = new System.Drawing.Point(73, 105);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(160, 11);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "꿈에 나온 사물을 입력해주세요";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(560, 57);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(29, 12);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "감정";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(359, 57);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(29, 12);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "변화";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(651, 82);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(47, 12);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "했다/다";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(455, 82);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(47, 12);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "해서/서";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(239, 82);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 12);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "이/가";
             // 
             // groupBox2
             // 
@@ -223,6 +205,14 @@
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "결과";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(24, 32);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(709, 135);
+            this.textBox1.TabIndex = 0;
             // 
             // menuStrip1
             // 
@@ -245,20 +235,17 @@
             this.파일ToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
             this.파일ToolStripMenuItem.Text = "파일";
             // 
-            // 정보ToolStripMenuItem
-            // 
-            this.정보ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dreamLens정보ToolStripMenuItem});
-            this.정보ToolStripMenuItem.Name = "정보ToolStripMenuItem";
-            this.정보ToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
-            this.정보ToolStripMenuItem.Text = "정보";
-            // 
             // 내역불러오기ToolStripMenuItem
             // 
             this.내역불러오기ToolStripMenuItem.Name = "내역불러오기ToolStripMenuItem";
             this.내역불러오기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.내역불러오기ToolStripMenuItem.Text = "내역 불러오기";
             this.내역불러오기ToolStripMenuItem.Click += new System.EventHandler(this.내역불러오기ToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // 끝내기ToolStripMenuItem
             // 
@@ -267,25 +254,20 @@
             this.끝내기ToolStripMenuItem.Text = "끝내기";
             this.끝내기ToolStripMenuItem.Click += new System.EventHandler(this.끝내기ToolStripMenuItem_Click);
             // 
-            // toolStripSeparator1
+            // 정보ToolStripMenuItem
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.정보ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dreamLens정보ToolStripMenuItem});
+            this.정보ToolStripMenuItem.Name = "정보ToolStripMenuItem";
+            this.정보ToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.정보ToolStripMenuItem.Text = "정보";
             // 
             // dreamLens정보ToolStripMenuItem
             // 
             this.dreamLens정보ToolStripMenuItem.Name = "dreamLens정보ToolStripMenuItem";
-            this.dreamLens정보ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dreamLens정보ToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.dreamLens정보ToolStripMenuItem.Text = "DreamLens 정보";
             this.dreamLens정보ToolStripMenuItem.Click += new System.EventHandler(this.dreamLens정보ToolStripMenuItem_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(6, 20);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(746, 163);
-            this.textBox1.TabIndex = 0;
             // 
             // Form1
             // 
@@ -310,8 +292,6 @@
 
         }
 
-        #endregion
-
         private System.Windows.Forms.TextBox tbObject;
         private System.Windows.Forms.TextBox tbAct;
         private System.Windows.Forms.TextBox tbEmotion;
@@ -324,7 +304,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -338,4 +317,4 @@
         private System.Windows.Forms.TextBox textBox1;
     }
 }
-
+#endregion
