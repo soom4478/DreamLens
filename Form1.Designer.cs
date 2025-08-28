@@ -185,7 +185,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 12);
             this.label3.TabIndex = 5;
-            this.label3.Text = "해서/서";
+            this.label3.Text = "서/해서";
             // 
             // label2
             // 
@@ -238,19 +238,19 @@
             // 내역불러오기ToolStripMenuItem
             // 
             this.내역불러오기ToolStripMenuItem.Name = "내역불러오기ToolStripMenuItem";
-            this.내역불러오기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.내역불러오기ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.내역불러오기ToolStripMenuItem.Text = "내역 불러오기";
             this.내역불러오기ToolStripMenuItem.Click += new System.EventHandler(this.내역불러오기ToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(147, 6);
             // 
             // 끝내기ToolStripMenuItem
             // 
             this.끝내기ToolStripMenuItem.Name = "끝내기ToolStripMenuItem";
-            this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.끝내기ToolStripMenuItem.Text = "끝내기";
             this.끝내기ToolStripMenuItem.Click += new System.EventHandler(this.끝내기ToolStripMenuItem_Click);
             // 
