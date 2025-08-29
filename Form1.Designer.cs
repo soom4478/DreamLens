@@ -28,6 +28,7 @@
             this.tbAct = new System.Windows.Forms.TextBox();
             this.tbEmotion = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -36,7 +37,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.resultBox = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.파일ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.내역불러오기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,7 +45,6 @@
             this.끝내기ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.정보ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dreamLens정보ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
@@ -96,6 +96,17 @@
             this.groupBox1.Text = "꿈 내용 입력";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("굴림", 8F);
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(8, 165);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(240, 11);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "* 원형을 입력하세요 예) 물, 떨어지다, 무섭다 *";
+            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("굴림", 10F);
@@ -105,6 +116,7 @@
             this.button1.TabIndex = 12;
             this.button1.Text = "확인";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label9
             // 
@@ -168,7 +180,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.resultBox);
             this.groupBox2.Location = new System.Drawing.Point(20, 237);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(758, 189);
@@ -176,13 +188,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "결과";
             // 
-            // textBox1
+            // resultBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(24, 32);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(709, 135);
-            this.textBox1.TabIndex = 0;
+            this.resultBox.Location = new System.Drawing.Point(24, 32);
+            this.resultBox.Multiline = true;
+            this.resultBox.Name = "resultBox";
+            this.resultBox.Size = new System.Drawing.Size(709, 135);
+            this.resultBox.TabIndex = 0;
             // 
             // menuStrip1
             // 
@@ -208,19 +220,19 @@
             // 내역불러오기ToolStripMenuItem
             // 
             this.내역불러오기ToolStripMenuItem.Name = "내역불러오기ToolStripMenuItem";
-            this.내역불러오기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.내역불러오기ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.내역불러오기ToolStripMenuItem.Text = "내역 불러오기";
             this.내역불러오기ToolStripMenuItem.Click += new System.EventHandler(this.내역불러오기ToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(147, 6);
             // 
             // 끝내기ToolStripMenuItem
             // 
             this.끝내기ToolStripMenuItem.Name = "끝내기ToolStripMenuItem";
-            this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.끝내기ToolStripMenuItem.Text = "끝내기";
             this.끝내기ToolStripMenuItem.Click += new System.EventHandler(this.끝내기ToolStripMenuItem_Click);
             // 
@@ -235,20 +247,9 @@
             // dreamLens정보ToolStripMenuItem
             // 
             this.dreamLens정보ToolStripMenuItem.Name = "dreamLens정보ToolStripMenuItem";
-            this.dreamLens정보ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dreamLens정보ToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.dreamLens정보ToolStripMenuItem.Text = "DreamLens 정보";
             this.dreamLens정보ToolStripMenuItem.Click += new System.EventHandler(this.dreamLens정보ToolStripMenuItem_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("굴림", 8F);
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(8, 165);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(240, 11);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "* 원형을 입력하세요 예) 물, 떨어지다, 무섭다 *";
             // 
             // Form1
             // 
@@ -292,7 +293,7 @@
         private System.Windows.Forms.ToolStripMenuItem 끝내기ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 정보ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dreamLens정보ToolStripMenuItem;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox resultBox;
         private System.Windows.Forms.Label label2;
     }
 }

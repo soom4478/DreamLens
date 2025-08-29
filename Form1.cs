@@ -14,18 +14,34 @@ namespace DreamLens
     public partial class Form1 : Form
     {
         List<string> results;
+        private Dictionary<string, string> _dreamDictionary;
+
         public Form1()
         {
             InitializeComponent();
+            _dreamDictionary = new Dictionary<string, string>(40000);
             LoadResults();
         }
-
         private void LoadResults()
         {
             try
             {
-                string filename = "dream_data.csv";
-                results = File.ReadAllLines(filename).ToList();
+                foreach (var line in File.ReadLines("./dream_data.csv"))
+                {
+                    var firstCommaIndex = line.IndexOf(',');
+                    if (firstCommaIndex < 0) continue;
+
+                    var secondCommaIndex = line.IndexOf(',', firstCommaIndex + 1);
+                    if (secondCommaIndex < 0) continue;
+
+                    var thirdCommaIndex = line.IndexOf(',', secondCommaIndex + 1);
+                    if (thirdCommaIndex < 0) continue;
+
+                    string key = line.Substring(0, thirdCommaIndex);
+                    string value = line.Substring(thirdCommaIndex + 1);
+
+                    _dreamDictionary[key] = value;
+                }
             }
             catch (FileNotFoundException ex)
             {
@@ -36,6 +52,31 @@ namespace DreamLens
             {
                 MessageBox.Show($"권환이 없어요.\n{ex.Message}", "권한 오류",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"알 수 없는 오류가 발생했어요.\n{ex.Message}", "알 수 없는 오류",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string obj = tbObject.Text;
+                string act = tbAct.Text;
+                string emt = tbEmotion.Text;
+                string key = $"{obj},{act},{emt}";
+
+                if (_dreamDictionary.TryGetValue(key, out string interpretation))
+                {
+                    resultBox.Text = interpretation;
+                }
+                else
+                {
+                    resultBox.Text = "해석을 찾을 수 없습니다.";
+                }
             }
             catch (Exception ex)
             {
@@ -87,5 +128,6 @@ namespace DreamLens
         {
 
         }
+
     }
 }
