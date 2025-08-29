@@ -60,6 +60,23 @@ namespace DreamLens
             }
         }
 
+        private void saveHistory(string history)
+        {
+            try
+            {
+                string filename = "history.csv";
+                File.AppendAllText(filename, history + Environment.NewLine);
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                MessageBox.Show($"권한 없음 오류 발생!\n{ex.Message}", "권한 오류");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"알 수 없는 오류 발생!\n{ex.Message}", "알 수 없는 오류");
+            }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -69,14 +86,17 @@ namespace DreamLens
                 string emt = tbEmotion.Text;
                 string key = $"{obj},{act},{emt}";
 
-                if (_dreamDictionary.TryGetValue(key, out string interpretation))
+                if (_dreamDictionary.TryGetValue(key, out string re))
                 {
-                    resultBox.Text = interpretation;
+                    resultBox.Text = re;
+                    string resultText = obj + " " + act + " " + emt + "|" + re;
+                    saveHistory(resultText);
                 }
                 else
                 {
                     resultBox.Text = "해석을 찾을 수 없습니다.";
                 }
+
             }
             catch (Exception ex)
             {
