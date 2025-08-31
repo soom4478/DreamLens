@@ -53,26 +53,29 @@
             // tbObject
             // 
             this.tbObject.Font = new System.Drawing.Font("굴림", 13F);
-            this.tbObject.Location = new System.Drawing.Point(76, 73);
+            this.tbObject.Location = new System.Drawing.Point(87, 91);
+            this.tbObject.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbObject.Name = "tbObject";
-            this.tbObject.Size = new System.Drawing.Size(150, 27);
+            this.tbObject.Size = new System.Drawing.Size(171, 32);
             this.tbObject.TabIndex = 0;
             this.tbObject.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // tbAct
             // 
             this.tbAct.Font = new System.Drawing.Font("굴림", 13F);
-            this.tbAct.Location = new System.Drawing.Point(291, 73);
+            this.tbAct.Location = new System.Drawing.Point(333, 91);
+            this.tbAct.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbAct.Name = "tbAct";
-            this.tbAct.Size = new System.Drawing.Size(158, 27);
+            this.tbAct.Size = new System.Drawing.Size(180, 32);
             this.tbAct.TabIndex = 1;
             // 
             // tbEmotion
             // 
             this.tbEmotion.Font = new System.Drawing.Font("굴림", 13F);
-            this.tbEmotion.Location = new System.Drawing.Point(508, 73);
+            this.tbEmotion.Location = new System.Drawing.Point(581, 91);
+            this.tbEmotion.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tbEmotion.Name = "tbEmotion";
-            this.tbEmotion.Size = new System.Drawing.Size(130, 27);
+            this.tbEmotion.Size = new System.Drawing.Size(148, 32);
             this.tbEmotion.TabIndex = 2;
             // 
             // groupBox1
@@ -88,9 +91,11 @@
             this.groupBox1.Controls.Add(this.tbEmotion);
             this.groupBox1.Controls.Add(this.tbAct);
             this.groupBox1.Controls.Add(this.tbObject);
-            this.groupBox1.Location = new System.Drawing.Point(17, 47);
+            this.groupBox1.Location = new System.Drawing.Point(19, 59);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(761, 184);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox1.Size = new System.Drawing.Size(870, 230);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "꿈 내용 입력";
@@ -101,18 +106,19 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("굴림", 8F);
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(8, 165);
+            this.label2.Location = new System.Drawing.Point(9, 206);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(240, 11);
+            this.label2.Size = new System.Drawing.Size(310, 14);
             this.label2.TabIndex = 13;
             this.label2.Text = "* 원형을 입력하세요 예) 물, 떨어지다, 무섭다 *";
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("굴림", 10F);
-            this.button1.Location = new System.Drawing.Point(594, 131);
+            this.button1.Location = new System.Drawing.Point(679, 164);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(142, 34);
+            this.button1.Size = new System.Drawing.Size(162, 42);
             this.button1.TabIndex = 12;
             this.button1.Text = "확인";
             this.button1.UseVisualStyleBackColor = true;
@@ -123,9 +129,9 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("굴림", 8F);
             this.label9.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label9.Location = new System.Drawing.Point(516, 105);
+            this.label9.Location = new System.Drawing.Point(590, 131);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(118, 11);
+            this.label9.Size = new System.Drawing.Size(151, 14);
             this.label9.TabIndex = 11;
             this.label9.Text = "어떤 감정을 느꼈나요?";
             // 
@@ -134,18 +140,18 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("굴림", 8F);
             this.label8.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label8.Location = new System.Drawing.Point(289, 105);
+            this.label8.Location = new System.Drawing.Point(330, 131);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(166, 11);
+            this.label8.Size = new System.Drawing.Size(212, 14);
             this.label8.TabIndex = 10;
             this.label8.Text = "사물에게 어떤 변화가 있었나요?";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(137, 57);
+            this.label7.Location = new System.Drawing.Point(157, 71);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(29, 12);
+            this.label7.Size = new System.Drawing.Size(37, 15);
             this.label7.TabIndex = 9;
             this.label7.Text = "사물";
             // 
@@ -154,56 +160,61 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("굴림", 8F);
             this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(73, 105);
+            this.label1.Location = new System.Drawing.Point(83, 131);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(160, 11);
+            this.label1.Size = new System.Drawing.Size(204, 14);
             this.label1.TabIndex = 3;
             this.label1.Text = "꿈에 나온 사물을 입력해주세요";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(560, 57);
+            this.label6.Location = new System.Drawing.Point(640, 71);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(29, 12);
+            this.label6.Size = new System.Drawing.Size(37, 15);
             this.label6.TabIndex = 8;
             this.label6.Text = "감정";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(359, 57);
+            this.label5.Location = new System.Drawing.Point(410, 71);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(29, 12);
+            this.label5.Size = new System.Drawing.Size(37, 15);
             this.label5.TabIndex = 7;
             this.label5.Text = "변화";
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.resultBox);
-            this.groupBox2.Location = new System.Drawing.Point(20, 237);
+            this.groupBox2.Location = new System.Drawing.Point(23, 296);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(758, 189);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.groupBox2.Size = new System.Drawing.Size(866, 236);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "결과";
             // 
             // resultBox
             // 
-            this.resultBox.Location = new System.Drawing.Point(24, 32);
+            this.resultBox.Location = new System.Drawing.Point(27, 40);
+            this.resultBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.resultBox.Multiline = true;
             this.resultBox.Name = "resultBox";
-            this.resultBox.Size = new System.Drawing.Size(709, 135);
+            this.resultBox.Size = new System.Drawing.Size(810, 168);
             this.resultBox.TabIndex = 0;
             // 
             // menuStrip1
             // 
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.파일ToolStripMenuItem,
             this.정보ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(914, 28);
             this.menuStrip1.TabIndex = 5;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -214,25 +225,25 @@
             this.toolStripSeparator1,
             this.끝내기ToolStripMenuItem});
             this.파일ToolStripMenuItem.Name = "파일ToolStripMenuItem";
-            this.파일ToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.파일ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.파일ToolStripMenuItem.Text = "파일";
             // 
             // 내역불러오기ToolStripMenuItem
             // 
             this.내역불러오기ToolStripMenuItem.Name = "내역불러오기ToolStripMenuItem";
-            this.내역불러오기ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.내역불러오기ToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
             this.내역불러오기ToolStripMenuItem.Text = "내역 불러오기";
             this.내역불러오기ToolStripMenuItem.Click += new System.EventHandler(this.내역불러오기ToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(147, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(184, 6);
             // 
             // 끝내기ToolStripMenuItem
             // 
             this.끝내기ToolStripMenuItem.Name = "끝내기ToolStripMenuItem";
-            this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.끝내기ToolStripMenuItem.Size = new System.Drawing.Size(187, 26);
             this.끝내기ToolStripMenuItem.Text = "끝내기";
             this.끝내기ToolStripMenuItem.Click += new System.EventHandler(this.끝내기ToolStripMenuItem_Click);
             // 
@@ -241,26 +252,27 @@
             this.정보ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dreamLens정보ToolStripMenuItem});
             this.정보ToolStripMenuItem.Name = "정보ToolStripMenuItem";
-            this.정보ToolStripMenuItem.Size = new System.Drawing.Size(43, 20);
+            this.정보ToolStripMenuItem.Size = new System.Drawing.Size(53, 24);
             this.정보ToolStripMenuItem.Text = "정보";
             // 
             // dreamLens정보ToolStripMenuItem
             // 
             this.dreamLens정보ToolStripMenuItem.Name = "dreamLens정보ToolStripMenuItem";
-            this.dreamLens정보ToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.dreamLens정보ToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
             this.dreamLens정보ToolStripMenuItem.Text = "DreamLens 정보";
             this.dreamLens정보ToolStripMenuItem.Click += new System.EventHandler(this.dreamLens정보ToolStripMenuItem_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(238)))), ((int)(((byte)(191)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(914, 562);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "드림렌즈:3204박수민";
             this.groupBox1.ResumeLayout(false);

@@ -50,7 +50,7 @@ namespace DreamLens
             }
             catch (UnauthorizedAccessException ex)
             {
-                MessageBox.Show($"권환이 없어요.\n{ex.Message}", "권한 오류",
+                MessageBox.Show($"권한이 없어요.\n{ex.Message}", "권한 오류",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
